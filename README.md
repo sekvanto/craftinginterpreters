@@ -1,1 +1,4 @@
-A place for the code from the Crafting Interpreters book (https://craftinginterpreters.com/contents.html). Contains minor extensions
+A place for the code from the Crafting Interpreters book (https://craftinginterpreters.com/contents.html)
+
+Minor extensions:
+* Supports C-style `/*...*/` block comments (not nested)
