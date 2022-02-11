@@ -3,3 +3,4 @@ jlox/out
 jlox/jlox.iml
 jlox/test.lox
 a.out
+clox/test.lox
