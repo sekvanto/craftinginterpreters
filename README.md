@@ -1,8 +1,7 @@
 A place for the code from the Crafting Interpreters book (https://craftinginterpreters.com/contents.html)
 
 # jlox
-
-## Minor extensions:
+Minor extensions:
 * Supports C-style `/*...*/` block comments (not nested)
 * Comma expressions
 * C-style ternary operator `?:`
@@ -11,6 +10,5 @@ A place for the code from the Crafting Interpreters book (https://craftinginterp
 * Supports `break` statement inside loops
 
 # clox
-
-## Minor internal extensions:
+Minor extensions:
 * .
