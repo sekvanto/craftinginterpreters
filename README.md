@@ -11,4 +11,22 @@ Minor extensions:
 
 # clox
 Minor extensions:
-* .
+* Arity checking for native functions
+* Extended native function system for reporting runtime errors. Example:
+```c
+static bool callValue(Value callee, int argCount) {
+    if (IS_OBJ(callee)) {
+        switch (OBJ_TYPE(callee)) {
+            case OBJ_NATIVE: {
+                if (AS_NATIVE_ARITY(callee) != argCount) {
+                    runtimeError(false, "Expected %d arguments but got %d.", AS_NATIVE_ARITY(callee), argCount);
+                    return false;
+                }
+                /*...*/
+                return true;
+            }
+            /*...*/
+        }
+    }
+}
+```
